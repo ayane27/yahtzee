@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Die6
+comment0.text=\n\ Write\ a\ description\ of\ class\ die6\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Die6()
+comment1.text=\n\ Constructor\ to\ do\ an\ initial\ roll\ to\ set\ the\ first\ value\n
+comment2.params=
+comment2.target=int\ getValue()
+comment2.text=\n\ Getter\ for\ value\n\ @return\ Die\ value\n
+comment3.params=
+comment3.target=void\ roll()
+comment3.text=\n\ Roll\ the\ die\!\ Generate\ random\ number\ 1\ <\=\ x\ <\=\ 6\ and\ assign\ to\ value\n\ Note\ that\ roll\ does\ NOT\ return\ the\ new\ value\n
+comment4.params=
+comment4.target=int\ rollAndGetValue()
+comment4.text=\n\ Roll\ the\ die\ and\ return\ the\ new\ value\n\ @return\ Die\ value\n
+numComments=5
