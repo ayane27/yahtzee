@@ -34,15 +34,15 @@ public class Yahtzee
     }
 
     public String summarize() {    
-        int[] counts = new int[6];
-        for (Die6 die: dArray) {
-            counts[die.getValue() -1]++;
+        int[] counts = new int[6]; //counts:array length 6
+        for (Die6 die: dArray) {  //counts frequency of each die valie
+            counts[die.getValue() -1]++;  //-1 to match array index(0-5)
         }
-        StringBuilder summary = new StringBuilder();
+        StringBuilder summary = new StringBuilder(); //mutable string, can be changed w/o creating new object, mods
         for (int i = 0; i < counts.length; i++) {
-            summary.append((i + 1) + "-" + counts[i]);
-             if (i < counts.length - 1) {    //to store correctly
-                summary.append("; ");
+            summary.append((i + 1) + "-" + counts[i]);  //+1 to match values of dice( displays values 1-6)
+             if (i < counts.length - 1) {   
+                summary.append("; ");  //append:adds data/characters, not last one(i=5)
             }
         }
         return summary.toString();
@@ -55,7 +55,6 @@ public class Yahtzee
             values[i++] = die.getValue();
         }
         return "Dice values: " + Arrays.toString(values).replaceAll("[\\[\\],]","");
-
     }
 }
 
